@@ -14,7 +14,7 @@ router.delete('/user/remove/:id', authController.Delete)
 router.get('/alllogin', authController.Alluser)
 // Register
 router.post('/register', regis, authController.Register)
-// Change password
+// Forgot password
 router.post('/forgot', authController.Forgot)
 
 module.exports = router
