@@ -133,9 +133,9 @@ const Forgot = async (req, res) => {
         await users.findOne({ where: { email: email } }).then(async (user) => {
             //Send verification mail to user
             var mailOption = {
-                from: '"Verify your email" <dungpt.ct2@gmail.com>',
+                from: '"Verify your email" <anhnq3@vmodev.com>',
                 to: user.email,
-                subject: 'DungPT -Create new password',
+                subject: 'AnhNQ -Create new password',
                 html: `<h2> ${user.name}! Create new password </h2>
                     <a href='http://${req.headers.host}/verify-account?email=${user.email}&newPass=${newPassword}'>Create new password</a>`,
             }
